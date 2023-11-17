@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="description" content="ie=edge">
+    <link rel="stylesheet" href="./static/main.css">
+    <title>Spelling Checker</title>
+</head>
+<body>
+    <div>
+        <h1 class="text-center"> Welcome to Spelling Checker</h1>
+    </div>
+    
+<div class="container">
+    <div class="c1">
+     <form action="/spell" methods="post">
+        <label for="text">Text Here</label>
+        <textarea class="form-control"  rows="25" cols="200" name="text" id="text" placeholder="Write or Place your text"></textarea>
+     </div>
+     </form>
+ </div>
+
+ <div class="container">
+    <div class ="c2">
+          <form action="/grammer" method="post">
+            <div class="form-group">
+             <label for="file">Result</label>
+             <textarea class="form-control "  rows="25" cols="400" id="file" name="file"></textarea>
+            </div>
+         <button type="submit" class="btn btn-light">Check</button>
+        </div>
+    </form>  
+ </div>
+
+ <!--File uploader
+ 
+<div class="Warpper">
+    <form action="#">
+        <input type="file" class="file-input" hidden>
+        <i class="fas fa-cloud-upload-alt"></i> 
+        <p> Browse File to Upload</p>
+    </form>
+    <section class="progress-area">
+        <li class="row">
+            <i class="fas fa-file-alt"></i>
+            <div class="content">
+                <div class="details">
+                    <span class="name">image_01.png .Uploading</span>
+                    <span class="percent">50%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </li>
+    </section>
+    <section class="uploaded-area">
+        <li class="row">
+            <div class="content">
+                <i class="fas fa-file-alt"></i>
+                <div class="details">
+                    <span class="name"> image_01.png . Uploaded  </span>
+                    <span class="size">70 KB</span>
+                </div>
+
+            </div>
+        </li>
+    </section>
+</div>-->
+
+<!--Descriptuio-->
+</body>
+<body>
+    <div class="cont">
+        <div class="bottom_content">
+        <div class="about">Correctify</div>
+        <p class="mlabout" >
+            Spelling checkers, a ubiquitous tool in our digital world, have greatly benefited from machine learning techniques. In this article, we will explore how machine learning is transforming spelling checkers and making written communication more efficient and error-free.
+
+            Machine learning-powered spelling checkers have elevated the quality of written communication by providing more accurate, context-aware, and user-specific suggestions. As technology continues to evolve, these tools are likely to become an integral part of our daily writing routines, helping us communicate more effectively and efficiently. Embracing this technology can save time, reduce errors, and enhance the overall quality of our written content.
+
+        </p>
+    </div>
+    </div>
+
+</body>
+
+{% endblock %}
+
